@@ -1,0 +1,218 @@
+header {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #0E176A;
+    padding: 20px 0;
+    margin-bottom: 63px;
+}
+main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1085px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+section h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D4D4D4;
+    margin-bottom: 25px;
+}
+.containerCountry {
+    display: flex;
+    flex-direction: column;
+}
+.containerCountry label {
+    display: flex;
+    align-items: center;
+    display: block;
+    transition: all 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.containerCountry input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.country {
+    position: relative;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.country:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
+header p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #FFFFFF;
+}
+input[type="radio"]:checked + label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    cursor: pointer;
+}
+input[type="radio"]:checked + label > img {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.country img {
+    transition: all 0.3s;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0);
+    margin-right: 10px;
+}
+.country:hover img {
+    cursor: pointer;
+    transition: all 0.3s;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.country:hover label{
+    transition: all 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    cursor: pointer;
+}
+.countrySection {
+    width: 24%;
+}
+.mobileNavigation {
+    display: none;
+}
+.mobileNavigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.mobileNavigation li {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #868686;
+    transition: all 0.3s;
+}
+.mobileNavigation {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+main {
+    max-width: 100%;
+    padding: 0 32px;
+}
+}
+@media (max-width: 992px) {
+main {
+    flex-wrap: wrap;
+}
+.countrySection {
+    width: 32%;
+    margin-bottom: 50px;
+}
+}
+@media (max-width:768px) {
+    .countrySection {
+        width: 48%;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 576px)
+ {
+    .countryDesctop {
+        display: none;
+    }
+    .countryMobile {
+        display: block;
+    }
+    header p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .mobileNavigation {
+        display: flex;
+        width: 100%;
+        padding: 27px 0px;
+    }
+    .countrySection {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .countrySection h2 {
+        display: none;
+    }
+    header {
+        margin-bottom: 0;
+    }
+    .countrySection {
+        border-bottom: 1px solid #D4D4D4;
+        padding-bottom: 35px;
+        margin-bottom: 35px;
+    }
+    .countrySection:nth-last-of-type(1) {
+        border-bottom: 0;
+        margin-bottom: 0;
+    }
+    .mobileNavigation li:hover{
+        transition: all 0.3s;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        cursor: pointer;
+    }
+    .mobileNavigation li:active {
+        transition: all 0.3s;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        cursor: pointer;
+    }
+}
+ @media (max-width: 320px) {
+    main {
+        padding: 0 16px;
+    }
+    .countrySection {
+        padding: 0;
+    }
+    .country:nth-last-of-type(1) {
+        margin-bottom: 50px;
+    }
+ }

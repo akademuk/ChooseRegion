@@ -195,7 +195,7 @@ main {
         color: #000000;
         cursor: pointer;
     }
-    .mobileNavigation li:active {
+    .mobileNavigation li.active {
         transition: all 0.3s;
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
@@ -204,6 +204,12 @@ main {
         color: #000000;
         cursor: pointer;
     }
+    .tabs__content {
+        display: none !important; /* по умолчанию прячем все блоки */
+      }
+      .tabs__content.active {
+        display: block !important; /* по умолчанию показываем нужный блок */
+      }
 }
  @media (max-width: 320px) {
     main {

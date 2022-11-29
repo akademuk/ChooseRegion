@@ -16,14 +16,14 @@
         </a>
         <p>Choose your country or region</p>
     </header>
-    <main>
-        <ul class="mobileNavigation">
-            <li>Europe</li>
+    <main class="tabs">
+        <ul class="mobileNavigation tabs__caption">
+            <li class="active">Europe</li>
             <li>Asia</li>
             <li>America</li>
             <li>Pacific</li>
         </ul>
-        <section class="countrySection">
+        <section class="countrySection tabs__content active">
             <h2>Europe</h2>
             <form action="" class="containerCountry Europe">
                 <div class="country">
@@ -61,7 +61,7 @@
             </form>
         </section>
 
-        <section class="countrySection">
+        <section class="countrySection tabs__content">
             <h2>Asia</h2>
             <form action="" class="containerCountry Europe">
                 <div class="country">
@@ -98,7 +98,7 @@
             </form>
         </section>
 
-        <section class="countrySection">
+        <section class="countrySection tabs__content">
             <h2>America</h2>
             <form action="" class="containerCountry Europe">
                 <div class="country">
@@ -119,7 +119,7 @@
             </form>
         </section>
 
-        <section class="countrySection">
+        <section class="countrySection tabs__content">
             <h2>Pacific</h2>
             <form action="" class="containerCountry Europe">
                 <div class="country">
@@ -132,5 +132,7 @@
             </form>
         </section>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script/tabs.js"></script>
 </body>
 </html>
